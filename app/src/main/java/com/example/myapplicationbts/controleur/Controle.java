@@ -1,6 +1,9 @@
 package com.example.myapplicationbts.controleur;
 
+import android.widget.Toast;
+
 import com.example.myapplicationbts.modele.Profil;
+import com.example.myapplicationbts.vue.MainActivity;
 
 public final class Controle {
 
@@ -12,18 +15,28 @@ public final class Controle {
     }
 
 
-    public static final Controle getInstance(){
+    public static final Controle getInstance(){ //singleton
         if(instance == null ){
             Controle.instance = new Controle();
 
+        }              //
+        return Controle.instance;               //
+    } //singleton
 
-        }
-        return Controle.instance;
-    }
 
     public void creerProfil( String produit,int nbrProduit){
-        profil = new profil();
+        profil = new Profil(produit,nbrProduit);
     }
+
+    public int getNbrProduit(){
+        return profil.getNbrProduit();
+    }
+    public String getProduit(){
+        return profil.getProduit();
+    }
+
+
+
 
 
 

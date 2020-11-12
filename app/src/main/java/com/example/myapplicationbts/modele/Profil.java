@@ -1,9 +1,14 @@
 package com.example.myapplicationbts.modele;
 
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import java.util.Date;
 
 
 public class Profil {
+
 
 //propriétés
 
@@ -12,6 +17,7 @@ public class Profil {
   // private Date dateEntrée;
     private String Produit;
     private int nbrProduit;
+
 
 
 
@@ -25,6 +31,11 @@ public class Profil {
     }
 
     public int getNbrProduit() {
+        return nbrProduit;
+    }
+
+    public  int setNbrProduit(int produit){
+        this.nbrProduit=produit;
         return nbrProduit;
     }
 
@@ -45,8 +56,6 @@ public class Profil {
     }
 
 */
-
-
 
 
 
