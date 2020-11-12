@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplicationbts.R;
@@ -42,6 +43,8 @@ public class  MainActivity extends AppCompatActivity {
        */
 
         private EditText NbrObjet1;
+        private TextView txtObjet;
+        private TextView txtObjet1;
 
         private Controle controle;
         Integer nbrProduit = 69;
@@ -50,23 +53,29 @@ public class  MainActivity extends AppCompatActivity {
         // Initialisation des liens avec les objets graphiques
         private void init(){                        // on affecte les élements de la vue
             // buttonPlusObjet1 = (Button)findViewById(R.id.buttonPlusObjet1);// il faut transtyper sons findview dans le type de notre element
+
             NbrObjet1 = (EditText)findViewById(R.id.NbrObjet1);
-
-            ajoutObjet((EditText)findViewById(R.id.NbrObjet1), (Button) findViewById(R.id.buttonPlusObjet1));//on utilise la methode ajoutObjet
+            txtObjet1 = (TextView)findViewById(R.id.txtObjet1) ;
+            ajoutObjet((EditText)findViewById(R.id.NbrObjet1), (Button) findViewById(R.id.buttonPlusObjet1));//on intialise la methode ajoutObjet et suprObjet avec sa zone de texte et son boutton + et - .
             suprObjet((EditText)findViewById(R.id.NbrObjet1), (Button) findViewById(R.id.buttonMoinsObjet1));
+            //afficheNbrProduit("test",nbrProduit,(EditText)findViewById(R.id.NbrObjet1));
 
-            ajoutObjet((EditText)findViewById(R.id.NbrObjet2), (Button) findViewById(R.id.buttonPlusObjet2));
+            ajoutObjet((EditText)findViewById(R.id.NbrObjet2), (Button) findViewById(R.id.buttonPlusObjet2));//on intialise la methode ajoutObjet et suprObjet avec sa zone de texte et son boutton + et - .
             suprObjet((EditText)findViewById(R.id.NbrObjet2), (Button) findViewById(R.id.buttonMoinsObjet2));
 
-            ajoutObjet((EditText)findViewById(R.id.NbrObjet3), (Button) findViewById(R.id.buttonPlusObjet3));
+            ajoutObjet((EditText)findViewById(R.id.NbrObjet3), (Button) findViewById(R.id.buttonPlusObjet3));//on intialise la methode ajoutObjet et suprObjet avec sa zone de texte et son boutton + et - .
             suprObjet((EditText)findViewById(R.id.NbrObjet3), (Button) findViewById(R.id.buttonMoinsObjet3));
 
-            ajoutObjet((EditText)findViewById(R.id.NbrObjet4), (Button) findViewById(R.id.buttonPlusObjet4));
+            ajoutObjet((EditText)findViewById(R.id.NbrObjet4), (Button) findViewById(R.id.buttonPlusObjet4));//on intialise la methode ajoutObjet et suprObjet avec sa zone de texte et son boutton + et - .
             suprObjet((EditText)findViewById(R.id.NbrObjet4), (Button) findViewById(R.id.buttonMoinsObjet4));
 
-            ajoutObjet((EditText)findViewById(R.id.NbrObjet5), (Button) findViewById(R.id.buttonPlusObjet5));
+            ajoutObjet((EditText)findViewById(R.id.NbrObjet5), (Button) findViewById(R.id.buttonPlusObjet5));//on intialise la methode ajoutObjet et suprObjet avec sa zone de texte et son boutton + et - .
             suprObjet((EditText)findViewById(R.id.NbrObjet5), (Button) findViewById(R.id.buttonMoinsObjet5));
-
+            txtObjet1.setText("Des grosse patates");
+            ((TextView)findViewById(R.id.txtObjet2)).setText("Poutres de Bamako");   // UTILISER POUR AVOIR SES ELEMENTS !!!!!!!
+            ((TextView)findViewById(R.id.txtObjet3)).setText("Oeufs-Mayo");
+            ((TextView)findViewById(R.id.txtObjet4)).setText("Glaoui de chevreuil");
+            ((TextView)findViewById(R.id.txtObjet5)).setText("Ratatouille");
         }
 
         // Va attendre un click sur les boutons + ou - pour ajouter un objet
@@ -120,6 +129,7 @@ public class  MainActivity extends AppCompatActivity {
         //affichage
         //NbrObjet1.setText(nbrProduit.toString());
         NbrObj.setText(nbrProduit.toString());
+
 
         }
     private void plusButton1(){
