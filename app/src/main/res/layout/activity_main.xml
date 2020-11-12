@@ -95,7 +95,7 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/buttonMoinsObjet1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="-" />
@@ -185,7 +185,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button8"
+                            android:id="@+id/buttonMoinsObjet2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-" />
@@ -199,7 +199,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editText9"
+                            android:id="@+id/NbrObjet2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -214,7 +214,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button9"
+                            android:id="@+id/buttonPlusObjet2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="+" />
@@ -274,7 +274,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button10"
+                            android:id="@+id/buttonMoinsObjet3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-" />
@@ -288,7 +288,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editText10"
+                            android:id="@+id/NbrObjet3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -303,7 +303,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button11"
+                            android:id="@+id/buttonPlusObjet3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="+" />
@@ -363,7 +363,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button12"
+                            android:id="@+id/buttonMoinsObjet4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-" />
@@ -377,7 +377,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editText11"
+                            android:id="@+id/NbrObjet4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -392,7 +392,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button13"
+                            android:id="@+id/buttonPlusObjet4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="+" />
@@ -452,7 +452,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button14"
+                            android:id="@+id/buttonMoinsObjet5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-" />
@@ -466,7 +466,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editText12"
+                            android:id="@+id/NbrObjet5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -481,7 +481,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/button15"
+                            android:id="@+id/buttonPlusObjet5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="+" />
