@@ -1,5 +1,7 @@
 package com.example.myapplicationbts.controleur;
 
+import android.media.Image;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.myapplicationbts.modele.Profil;
@@ -24,8 +26,8 @@ public final class Controle {
     } //singleton
 
 
-    public void creerProfil( String produit,int nbrProduit){
-        profil = new Profil(produit,nbrProduit);
+    public void creerProfil(String produit, int nbrProduit, ImageView imgProduit){
+        profil = new Profil(produit,nbrProduit, imgProduit);
     }
 
     public int getNbrProduit(){

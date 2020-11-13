@@ -1,7 +1,9 @@
 package com.example.myapplicationbts.modele;
 
+import android.media.Image;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Date;
@@ -17,16 +19,18 @@ public class Profil {
   // private Date dateEntrée;
     private String Produit;
     private int nbrProduit;
+    private ImageView imgProduit;
 
 
 
 
-    public Profil(/*String Nom, String Prenom, Date dateEntrée,*/ String produit, int nbrProduit){
+    public Profil(/*String Nom, String Prenom, Date dateEntrée,*/ String produit, int nbrProduit, ImageView imgProduit){
         //this.Nom = Nom;
         //this.Prenom = Prenom;
         //this.dateEntrée = dateEntrée;
         this.Produit = produit;
         this.nbrProduit = nbrProduit;
+        this.imgProduit = imgProduit;
 
     }
 
@@ -42,6 +46,17 @@ public class Profil {
     public String getProduit() {
         return Produit;
     }
+
+    public ImageView getImgProduit() {
+        return imgProduit;
+    }
+
+    public void setImgProduit(ImageView imgProduit) {
+        this.imgProduit = imgProduit;
+    }
+
+
+
 
     /*public String getPrenom() {
         return Prenom;
