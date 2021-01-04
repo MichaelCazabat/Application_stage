@@ -100,10 +100,10 @@ public class  MainActivity extends AppCompatActivity {
             imgProduit5.setImageResource(R.drawable.ratatouille);
 
 
-            txtObjet1.setText("Des grosses patates");
-            ((TextView)findViewById(R.id.txtObjet2)).setText("Poutres de Bamako");   // UTILISER POUR AVOIR SES ELEMENTS !!!!!!!
+            txtObjet1.setText("Des patates");
+            ((TextView)findViewById(R.id.txtObjet2)).setText("Poutres");   // UTILISER POUR AVOIR SES ELEMENTS !!!!!!!
             ((TextView)findViewById(R.id.txtObjet3)).setText("Oeufs-Mayo");
-            ((TextView)findViewById(R.id.txtObjet4)).setText("Glaoui de chevreuil");
+            ((TextView)findViewById(R.id.txtObjet4)).setText("chevreuil");
             ((TextView)findViewById(R.id.txtObjet5)).setText("Ratatouille");
         }
 
@@ -113,7 +113,7 @@ public class  MainActivity extends AppCompatActivity {
         private void ajoutObjet(final EditText NbrObj, Button idbutton ){
             idbutton.setOnClickListener(new Button.OnClickListener(){        // IMPORTANT POUR LE CLICK
                 public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "mdr ca fais 3 h que je passe a essayer de reparer cette merde", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(MainActivity.this, "mdr ca fais 3 h que je passe a essayer de reparer cette merde", Toast.LENGTH_SHORT).show();
 
                 // Récuperation de données saisies et try catch qui regarde si il y a une erreur.
                 try {
@@ -129,9 +129,10 @@ public class  MainActivity extends AppCompatActivity {
             });
         }
     private void suprObjet(final EditText NbrObj, Button idbutton ){
+
         idbutton.setOnClickListener(new Button.OnClickListener(){        // IMPORTANT POUR LE CLICK
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "mdr ca fais 3 h que je passe a essayer de reparer cette merde", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "mdr ca fais 3 h que je passe a essayer de reparer cette merde", Toast.LENGTH_SHORT).show();
 
                 // Récuperation de données saisies et try catch qui regarde si il y a une erreur.
                 try {
